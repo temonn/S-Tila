@@ -1,16 +1,12 @@
-import './App.css';
-import {useEffect, useState} from 'react'
-import './weather.js';
-import axios from 'axios';
+/*import axios from 'axios';
+import { useEffect, useState } from 'react';
 
-function App() {
-  const [lat, setLat] = useState(0);
-  const [lng, setLng] = useState(0);
-  const API_URL = 'https://api.openweathermap.org/data/2.5/weather?';
-  const ICON_URL = 'http://openweathermap.org/img/wn/';
-  const API_KEY = '08693bae3fce38b2c970d083197f8dc6';
 
-  function Weather({lat,lng}){
+const API_URL = 'https://api.openweathermap.org/data/2.5/weather?';
+const ICON_URL = 'http://openweathermap.org/img/wn/';
+const API_KEY = '08693bae3fce38b2c970d083197f8dc6';
+
+export default function Weather({lat,lng}){
     const [temp, setTemp] = useState(0);
     const [speed, setSpeed] = useState(0);
     const [direction, setDirection] = useState(0);
@@ -49,37 +45,4 @@ function App() {
             <img src={icon} alt=""/>
         </>
     )
-}
-
-  useEffect (() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(positon => {
-        setLat(positon.coords.latitude);
-        setLng(positon.coords.longitude);
-      }, (error) => {
-        alert(error);
-      })
-    } else {
-      alert('Sijainninsaanti ei ole käytössä!')
-    }
-  }, [])
-
-  /*if (isLoading) {
-    return <p>Loading...</p>
-  } else { */
-    return (
-    <div className='content'>
-    <h3>Your position</h3>
-    <p>
-      Position:&nbsp; 
-      {lat.toFixed(3)},
-      {lng.toFixed(3)}
-    </p>
-    <Weather lat={lat} lng={lng} />
-    </div>
-  );
-}
-//}
-
-
-export default App;
+}*/
