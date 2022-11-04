@@ -8,7 +8,7 @@ function App() {
   const [lng, setLng] = useState(0);
   const API_URL = 'https://api.openweathermap.org/data/2.5/weather?';
   const ICON_URL = 'http://openweathermap.org/img/wn/';
-  const API_KEY = '08693bae3fce38b2c970d083197f8dc6';
+  const API_KEY = 'API_AVAIN';
 
   function Weather({lat,lng}){
     const [temp, setTemp] = useState(0);
